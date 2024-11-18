@@ -1,0 +1,166 @@
+/* src/App.css */
+body {
+  font-family: Arial, sans-serif; /* Set the font style for the body */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  background-color: #f0f2f5; /* Light gray background color */
+}
+
+.app {
+  display: flex; /* Use flexbox layout for the main app */
+}
+
+.sidebar {
+  width: 200px; /* Fixed width for the sidebar */
+  background-color: #007bff; /* Blue background color */
+  color: #ffffff; /* White text color */
+  padding: 20px; /* Padding around sidebar content */
+  height: 100vh; /* Full viewport height */
+  position: fixed; /* Fixed positioning */
+}
+
+.sidebar h2 {
+  text-align: center; /* Center the sidebar title */
+}
+
+.sidebar ul {
+  list-style-type: none; /* Remove bullet points from the list */
+  padding: 0; /* Remove padding */
+}
+
+.sidebar ul li {
+  margin: 15px 0; /* Vertical spacing between list items */
+}
+
+.sidebar ul li a {
+  color: #ffffff; /* White text color for links */
+  text-decoration: none; /* Remove underline from links */
+}
+
+.sidebar ul li a:hover {
+  text-decoration: underline; /* Underline on hover for links */
+}
+
+.main-content {
+  margin-left: 220px; /* Space for the sidebar */
+  padding: 20px; /* Padding around main content */
+  flex: 1; /* Take up remaining space */
+}
+
+.top-nav {
+  display: flex; /* Use flexbox for the top navigation */
+  justify-content: flex-end; /* Align items to the right */
+  background-color: #ffffff; /* White background for top navigation */
+  padding: 10px 0; /* Padding for top navigation */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.nav-link {
+  color: #007bff; /* Blue color for nav links */
+  text-decoration: none; /* Remove underline from links */
+  margin-left: 15px; /* Spacing between links */
+}
+
+.nav-link:hover {
+  text-decoration: underline; /* Underline on hover for nav links */
+}
+
+h1, h2 {
+  color: #007bff; /* Blue color for headings */
+}
+
+label {
+  display: block; /* Block display for labels */
+  margin-bottom: 10px; /* Space below labels */
+  text-align: left; /* Align text to the left */
+}
+
+input {
+  width: 100%; /* Full width for input fields */
+  padding: 8px; /* Padding inside input fields */
+  margin-top: 5px; /* Space above input fields */
+  margin-bottom: 15px; /* Space below input fields */
+  border: 1px solid #ddd; /* Light gray border for input fields */
+  border-radius: 4px; /* Rounded corners for input fields */
+}
+
+button {
+  padding: 10px 20px; /* Padding inside buttons */
+  color: #ffffff; /* White text color for buttons */
+  background-color: #007bff; /* Blue background color for buttons */
+  border: none; /* Remove border from buttons */
+  border-radius: 4px; /* Rounded corners for buttons */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker blue on hover for buttons */
+}
+
+
+.libre-baskerville-regular {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.libre-baskerville-bold {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.libre-baskerville-regular-italic {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.tinos-regular {
+  font-family: "Tinos", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.tinos-bold {
+  font-family: "Tinos", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.tinos-regular-italic {
+  font-family: "Tinos", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.tinos-bold-italic {
+  font-family: "Tinos", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.scrollbar-hide-hover {
+  overflow-y: auto;
+  scrollbar-width: thin; /* For Firefox, makes the scrollbar thin */
+  scrollbar-color: rgba(100, 100, 100, 0.5) transparent; /* Color for Firefox */
+}
+
+.scrollbar-hide-hover::-webkit-scrollbar {
+  width: 0; /* Initially hidden scrollbar for WebKit browsers */
+  display: none;
+}
+
+/* Show a thin scrollbar on hover */
+.scrollbar-hide-hover:hover::-webkit-scrollbar {
+  width: 6px; /* Thin scrollbar width */
+}
+
+.scrollbar-hide-hover:hover::-webkit-scrollbar-thumb {
+  background-color: rgba(100, 100, 100, 0.5); /* Color for the scrollbar thumb */
+  border-radius: 4px; /* Rounded scrollbar edges */
+}
+
+.scrollbar-hide-hover:hover::-webkit-scrollbar-track {
+  background: rgba(200, 200, 200, 0.2); /* Background color for the scrollbar track */
+}
