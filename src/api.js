@@ -3,7 +3,7 @@
 import axios from 'axios';
 
 const instance = axios.create({
-   baseURL: 'http://localhost:5001/api',
+   baseURL: 'https://asmita-backend-mu.vercel.app/api',
 });
 
 instance.interceptors.request.use((config) => {
